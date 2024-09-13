@@ -4,7 +4,7 @@ This repository contains details about the data accompanying the paper **Algorit
 
 The data was collected through our geolocation audit experiment. Through the audit experiment, we investigate and compare the prevalence of COVID-19 misinformation surfaced by YouTube's search engine between the United States and South Africa, the countries heavily affected by the pandemic in the Global North and Global South, respectively. For each country, we selected 3 geolocations, placed twin sock-pupets (bots emulating real users) that collected the top-50 search results for 48 search queries belonging to 8 globally persistent COVID-19 misinformation topics, such as "Bill Gates Claims." To gain deeper insights into the platform's sorting algorithm, we sorted the search results across 4 search filters "Relevance" (default filter), "Upload Date," "View Count," and "Rating." The audit was conducted over 10 days from January 30th, 2023 to February 9th, 2023, resulting in 915K search results (of which 10,139 videos were unique). 
 
-We scored the videos based on their stance toward COVID-19 misinformation and compared the amount of misinformation present in search results between the US and SA. The videos were initially labeled along a 7-point scale: "Opposing COVID-19 Misinformation (-1),' "Neutral COVID-19 Information (0)," "Supporting COVID-19 Misinformation (1)," "On the COVID-19 origins in Wuhan, China (2)," "Irrelevant (3)," "Video in a language other than English (4)," and "URL not accessible (5)" (See Table 6 in the Appendix in the paper). However, we normalized the annotations to a 3-point scale based on their stance on COVID-19 misinformation: supporting, neutral, and opposing (see subsection "Consolidating from 5-classes to 3-classes" in the paper for more information). 
+We scored the videos based on their stance toward COVID-19 misinformation and compared the amount of misinformation present in search results between the US and SA. The videos were initially labeled along a 7-point scale: "Opposing COVID-19 Misinformation (-1),' "Neutral COVID-19 Information (0)," "Supporting COVID-19 Misinformation (1)," "On the COVID-19 origins in Wuhan, China (2)," "Irrelevant (3)," "Video in a language other than English (4)," and "URL not accessible (5)" (See Appendix Table 7 in the paper). However, we normalized the annotations to a 3-point scale based on their stance on COVID-19 misinformation: supporting, neutral, and opposing (see subsection "Consolidating from 5-classes to 3-classes" in the paper for more information). 
 
 # Data Description
 Below, we describe each data and their fields.
@@ -37,7 +37,7 @@ bill gates exposed, COVID-19 Bill Gates Claims
 - `Like`: Like Count of the YouTube Video
 - `Favorite Count`: Favorite Count of the YouTube Video
 - `# of Comments`: Number of Comments on the YouTube Video
-- `Annotation`: Annotation label of the YouTube Video (Used the 7-point scale; `Data Collection Overview` section above or Table 6 in the paper for more information)
+- `Annotation`: Annotation label of the YouTube Video (Used the 7-point scale; `Data Collection Overview` section above or Appendix Table 7 in the paper for more information)
 - `Top 100 Comments`: Top 100 Comments on the YouTube Video
 
 A snippet: 
@@ -48,7 +48,7 @@ x-wj8AXLDUI, https://www.youtube.com/watch?v=x-wj8AXLDUI, COVID 19 VACCINES BEIN
 ```
 
 **3. Non-English Video Annotations** (`manual-annotation/non-english-video-annotations.csv.zip`): The file contains 784 non-English videos from our audit data, manually annotated for COVID-19 misinformation. Please see section "Handling Videos in Non-English Languages" for more information. The dataset contains the following fields:
-- `Annotation`: Annotation label of the YouTube Video (Used the 7-point scale; `Data Collection Overview` section above or Table 6 in the paper for more information).
+- `Annotation`: Annotation label of the YouTube Video (Used the 7-point scale; `Data Collection Overview` section above or Appendix Table 7 in the paper for more information).
 - `Video ID`: ID of the YouTube Video; This code is extracted from the Video URL
 - `Video URL`: URL of the YouTube Video
 - `Video Title`: Title of the YouTube Video
