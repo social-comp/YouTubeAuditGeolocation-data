@@ -1,6 +1,6 @@
 # Data Collection Overview
 
-This repository contains details about the data accompanying the paper: Algorithmic Behaviors Across Regions: A Geolocation Audit of YouTube Search for COVID-19 Misinformation between the United States and South Africa.
+This repository contains details about the data accompanying the paper **Algorithmic Behaviors Across Regions: A Geolocation Audit of YouTube Search for COVID-19 Misinformation between the United States and South Africa.**
 
 The data was collected through our geolocation audit experiment. Through the audit experiment, we investigate and compare the prevalence of COVID-19 misinformation surfaced by YouTube's search engine between the United States and South Africa, the countries heavily affected by the pandemic in the Global North and Global South, respectively. For each country, we selected 3 geolocations, placed twin sock-pupets (bots emulating real users) that collected the top-50 search results for 48 search queries belonging to 8 globally persistent COVID-19 misinformation topics, such as "Bill Gates Claims." To gain deeper insights into the platform's sorting algorithm, we sorted the search results across 4 search filters "Relevance" (default filter), "Upload Date," "View Count," and "Rating." The audit was conducted over 10 days from January 30th, 2023 to February 9th, 2023, resulting in 915K search results (of which 10,139 videos were unique). 
 
