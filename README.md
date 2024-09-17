@@ -141,7 +141,7 @@ This will return the top-10 search results, sorted based on their search result 
 # Citation
 If you used this dataset in your research, please cite our work at:
 
-```
+```bibtex
 @misc{jung2024algorithmicbehaviorsregionsgeolocation,
       title={Algorithmic Behaviors Across Regions: A Geolocation Audit of YouTube Search for COVID-19 Misinformation between the United States and South Africa}, 
       author={Hayoung Jung and Prerna Juneja and Tanushree Mitra},
